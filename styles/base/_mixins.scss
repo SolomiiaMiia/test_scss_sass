@@ -1,0 +1,14 @@
+@mixin flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; //по горизонталі
+  align-items: center; //по вертикалі
+}
+
+@mixin flex($direction, $wrap, $justify, $align) {
+  display: flex; //статично
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}

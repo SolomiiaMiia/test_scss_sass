@@ -1,0 +1,38 @@
+// main{
+//   min-height: 400px;
+//   padding: 20px 40px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between; //по горизонталі
+//   align-items: center; //по вертикалі
+// }
+
+// замінила
+main{
+  min-height: 400px;
+  padding: 20px 40px;
+@include flex(row, wrap, space-between, center);
+}
+
+// .box{
+//   width: 30%;
+//   height: 100px;
+//   border: 1px solid #000;
+//   background-color: $mainBGColor;
+//   color: $mainTextColor;
+//   font-size: $mainTextSize;
+//   text-align: center;
+//   line-height: 100px;
+// }
+
+// замінила
+
+.box{
+  width: 30%;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: $mainBGColor;
+  color: $mainTextColor;
+  font-size: $mainTextSize;
+@include flex-center();
+}
